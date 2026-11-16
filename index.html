@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>제주 가족여행 3박 4일</title>
+<meta name="description" content="온 가족, 제주를 가볍게! 일정, 방문지, 예산, 준비물을 한눈에 확인해요.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+
+<header class="gnb">
+  <div class="wrap">
+    <a class="logo" href="#top">제주 가족여행</a>
+    <nav aria-label="주요 메뉴" style="display:flex">
+      <a class="m" href="#schedule">일정</a>
+      <a class="m" href="#places">관광지·맛집</a>
+      <a class="m" href="#budget">예산</a>
+      <a class="m" href="#checklist">체크리스트</a>
+      <a class="m" href="#contact">연락처</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div id="top" class="hero">
+    <div class="wrap">
+      <p class="slogan">온 가족, 제주를 가볍게!</p>
+      <h1>제주 가족여행<br>3박 4일</h1>
+      <ul class="chips" aria-label="여행 정보">
+        <li>9~10월 · 날짜 미정 (2027년)</li>
+        <li>10명 (성인 8 + 초등 2)</li>
+        <li>대구공항 ↔ 제주공항</li>
+        <li>중문 독채 · 렌터카 2대</li>
+        <li>500만원 안에서 알뜰하게!</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap quick">
+    <nav aria-label="바로가기">
+      <ul>
+        <li><a href="#schedule">오늘 일정</a></li>
+        <li><a href="#budget">예산</a></li>
+        <li><a href="#places">맛집·관광지</a></li>
+        <li><a href="#checklist">준비물·예약</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="wrap">
+    <section class="sec" aria-labelledby="h-days">
+      <h2 class="sh" id="h-days">4일 한눈에 보기</h2>
+      <p class="sub">카드를 누르면 그날 일정으로 이동해요.</p>
+      <div class="grid g4" id="daycards"></div>
+    </section>
+
+    <section class="sec" id="schedule" aria-labelledby="h-sch">
+      <h2 class="sh" id="h-sch">일정 상세</h2>
+      <p class="sub">시간은 대략적인 안이에요. 영업시간·휴무일·예약은 출발 전에 전화나 지도 앱으로 다시 확인해 주세요. ✅는 확인한 가격, ≈는 추정 가격이에요.</p>
+      <div class="tabs" role="tablist" aria-label="일차 선택" id="daytabs"></div>
+      <div id="daypanel" role="tabpanel" tabindex="0"></div>
+    </section>
+
+    <section class="sec" id="places" aria-labelledby="h-pl">
+      <h2 class="sh" id="h-pl">관광지·맛집</h2>
+      <p class="sub">사진과 설명은 비짓제주(제주관광공사 공식 포털) 자료예요. 단체 예약은 꼭 전화로 확인해 주세요.</p>
+      <div class="filters" id="filters"></div>
+      <div class="grid g3" id="placegrid"></div>
+    </section>
+
+    <section class="sec" id="budget" aria-labelledby="h-bu">
+      <h2 class="sh" id="h-bu">예산</h2>
+      <p class="sub">500만원 안에서 알뜰하게! 표시 가격은 조사 시점 기준이며 변동될 수 있어요. 항공·숙소·렌터카는 아직 시세를 확인하지 못했어요.</p>
+      <div class="bars" id="bars"></div>
+      <div class="tblwrap" id="budgettable"></div>
+      <h3 style="margin:24px 0 8px">식비가 초안보다 많아요. 이렇게 줄여 볼 수 있어요</h3>
+      <ul class="tips" id="tips"></ul>
+    </section>
+
+    <section class="sec" id="checklist" aria-labelledby="h-ck">
+      <h2 class="sh" id="h-ck">준비 체크리스트</h2>
+      <p class="sub">체크한 내용은 이 기기에만 저장돼요.</p>
+      <ul class="checks" id="checks"></ul>
+    </section>
+  </div>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>예약·문의 번호</h3>
+        <p>모바일에서 번호를 누르면 바로 전화가 걸려요. 단체 예약은 꼭 전화로 확인해 주세요.</p>
+        <ul id="tels"></ul>
+      </div>
+      <div>
+        <h3>유의사항과 출처</h3>
+        <ul>
+          <li>표시 가격은 조사 시점 기준이며 변동될 수 있어요.</li>
+          <li>사진과 설명: <a href="https://www.visitjeju.net" target="_blank" rel="noopener">비짓제주 VISITJEJU</a> (제주관광공사). 비영리 개인 용도로만 쓰고, 상업적 이용이나 외부 재배포는 하지 않아요.</li>
+          <li>일부 가격: 다이닝코드, 한국관광공사 대한민국 구석구석, 예약 플랫폼 후기 (Schedule.md 참고)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
